@@ -27,7 +27,7 @@ public class BankAccount implements Transactions{
 
     @Override
     public double depositAmount(String accNum, String userName, double amount) {
-        if(amount <= 0 && Objects.equals(accNum, "") && Objects.equals(userName, "")){
+        if(amount <= 0){
             throw new IllegalArgumentException("Please enter valid details");
         }
         accBalance += amount;
@@ -36,7 +36,7 @@ public class BankAccount implements Transactions{
 
     @Override
     public double withdrawAmount(String accNum, String userName, double amount) {
-        if(amount <= 0 && Objects.equals(accNum,"") && Objects.equals(userName,"")){
+        if(amount <= 0){
             throw new IllegalArgumentException("Please enter valid details");
         }
         accBalance -= amount;
