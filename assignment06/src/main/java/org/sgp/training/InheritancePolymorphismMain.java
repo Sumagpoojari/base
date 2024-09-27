@@ -47,10 +47,9 @@ public class InheritancePolymorphismMain {
         animalList[1] = new Lion("Lioness");
         animalList[2] = new Cat("Persian cat");
         animalList[3] = new Dog("Husky");
-       for(int i=0;i<animalList.length;i++){
-           Animals singleAnimal = animalList[i];
-           singleAnimal.sound();
-       }
+        for (Animals singleAnimal : animalList) {
+            singleAnimal.sound();
+        }
 
 
     }
