@@ -6,7 +6,7 @@ public class Animals {
 
     public Animals(String animal) {
         animalName = animal;
-        animalSound = "Roar"; //default
+        animalSound = "sound"; //default
     }
     public String getAnimalName() {
         return animalName;
@@ -14,5 +14,4 @@ public class Animals {
     public void sound(){
         System.out.println(animalName+"s "+animalSound);
     }
-
 }
