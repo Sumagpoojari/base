@@ -43,7 +43,9 @@ public class Book implements Readable{
         System.out.println("Price of the book is Rs "+price);
     }
     public void discountedPrice(double discountPercentage){
-        price = price*discountPercentage/100;
+        System.out.println("MRP : "+price);
+        price = price - price*(discountPercentage/100);
+        System.out.println("Discounted Price for you : "+price);
     }
 
     @Override

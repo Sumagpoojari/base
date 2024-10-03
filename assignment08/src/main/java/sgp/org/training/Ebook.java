@@ -11,12 +11,12 @@ public class Ebook extends Book{
     @Override
     public void displayInfo() {
         super.displayInfo();
-        System.out.println("Size of this file is "+fileSize);
+        System.out.println("Size of this file is "+fileSize+" MB");
     }
 
     @Override
     public void discountedPrice(double discountPercentage) {
-        discountPercentage =+ 10;
+        discountPercentage += 10.0;
         super.discountedPrice(discountPercentage);
     }
 }
